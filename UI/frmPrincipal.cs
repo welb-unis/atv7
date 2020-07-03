@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace PadraoDeProjetoEmCamadas
+{
+    public partial class frmPrincipal : Form
+    {
+        public frmPrincipal()
+        {
+            InitializeComponent();
+        }
+
+        private void pessoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroPessoa f = new frmCadastroPessoa(this);
+            f.ShowDialog();
+            f.Dispose();
+            this.Text = "Menu";
+        }
+
+        private void empresaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroEmpresa f = new frmCadastroEmpresa();
+            f.ShowDialog();
+            f.Dispose();
+            this.Text = "Menu";
+        }
+
+        private void eleiçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEleicao f = new frmEleicao();
+            f.ShowDialog();
+            f.Dispose();
+            this.Text = "Menu";
+        }
+    }
+}
