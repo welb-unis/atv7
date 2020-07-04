@@ -25,10 +25,15 @@ namespace PadraoDeProjetoEmCamadas
         {
             alterapropriedades(2);
         }
-
+        
         private void btn_buscar_Click(object sender, EventArgs e)
         {
+            FRMLocalizarEleicao f = new FRMLocalizarEleicao();
+            f.ShowDialog();
 
+            popularcampos(f.modeleleicao);
+
+            alterapropriedades(3);
         }
 
         private void btn_alterar_Click(object sender, EventArgs e)

@@ -71,6 +71,12 @@
     <Compile Include="frmEleicao.Designer.cs">
       <DependentUpon>frmEleicao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMLocalizarEleicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMLocalizarEleicao.Designer.cs">
+      <DependentUpon>FRMLocalizarEleicao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMLocalizar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEleicao.resx">
       <DependentUpon>frmEleicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMLocalizarEleicao.resx">
+      <DependentUpon>FRMLocalizarEleicao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMLocalizar.resx">
       <DependentUpon>FRMLocalizar.cs</DependentUpon>

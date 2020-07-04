@@ -10,7 +10,6 @@ namespace PadraoDeProjetoEmCamadas
     public partial class FRMLocalizar : Form
     {
         public MODELOPassoa modelpessoa;
-        public MODELOEleicao modeloeleicao;
         public FRMLocalizar()
         {
             InitializeComponent();
